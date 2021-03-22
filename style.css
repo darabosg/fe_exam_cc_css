@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #23b473 !important;
+}
+
+header {
+  width: 100%;
+}
+header h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin: 3rem;
+}
+
+.burger {
+  background-color: black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.burger .line {
+  display: block !important;
+  background-color: white !important;
+  height: 0.3rem;
+  width: 2.5rem;
+  margin: 0.2rem;
+}
+
+.container {
+  width: 80% !important;
+  margin: auto !important;
+  margin-top: 5rem !important;
+}
+
+.cards:nth-of-type(odd) > .inner {
+  background-color: #252525;
+}
+.cards:nth-of-type(odd) > .inner p {
+  color: white;
+}
+
+.cards:nth-of-type(even) > .inner {
+  background-color: white;
+}
+
+.cards {
+  margin-bottom: 2rem;
+}
+.cards span {
+  color: #e6aa46;
+  font-weight: bold;
+}
+
+.inner {
+  padding: 2rem;
+  height: 450px;
+}
+.inner h2 {
+  color: #e6aa46;
+  font-size: 1.5rem;
+}
+.inner p {
+  margin-top: 2rem;
+}
+
+.play {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play .outer {
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.play .triangle {
+  width: 50px;
+  height: 50px;
+  background: white;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  transform: translateX(5px);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header h1 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  .container {
+    margin-top: 3rem !important;
+  }
+
+  .inner {
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
